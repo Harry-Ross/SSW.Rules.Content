@@ -8,12 +8,9 @@ authors:
 created: 2021-08-27T00:22:59.977Z
 guid: e90c2504-57a6-499f-ba86-d8820f1dce6d
 ---
-Initializing the Project - See how to get the work items into Azure DevOps via Excel:
+Sometimes it may be a tedious task manually creating work items in Azure DevOps. However, a great way to automatically import work items is by using Excel to first write out the details for PBIs in a spreadsheet, and publish them to the project. 
 
 <!--endintro-->
-
-* Open SSW Priorities Estimate Template in Excel
-  ![Figure: Find SSW Template - 'New | My templates... | SSW_Proposal-Project | SSWPrioritiesEstimateTemplate.xltx''](ExcelSSWTemplate.jpeg)
 
 * Add the tasks and additional tasks into Release_XX sheet
   ![Figure: Copy work items to Release_XX sheet](ExcelReleaseSheet.jpeg)
