@@ -12,9 +12,8 @@ Sometimes it may be a tedious task manually creating work items in Azure DevOps.
 
 <!--endintro-->
 
-* First, make sure you have the Excel Azure DevOps add-in installed. 
-* Start with a blank Excel file 
-* Select the ribbon labelled "Team"
+* First, ensure the Excel Azure DevOps add-in is installed. 
+* Open a blank Excel file, then select the ribbon labelled "Team", then click "New List".
 
 ![Figure: The Azure DevOps "Team" ribbon on Excel](team-ribbon-labelled.png)
 
