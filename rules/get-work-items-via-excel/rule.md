@@ -12,6 +12,12 @@ Sometimes it may be a tedious task manually creating work items in Azure DevOps.
 
 <!--endintro-->
 
+* First, make sure you have the Excel Azure DevOps add-in installed. 
+* Start with a blank Excel file 
+* Select the ribbon labelled "Team"
+
+![Figure: The Azure DevOps "Team" ribbon on Excel](team-ribbon-labelled.png)
+
 * Add the tasks and additional tasks into Release_XX sheet
   ![Figure: Copy work items to Release_XX sheet](ExcelReleaseSheet.jpeg)
 
@@ -22,13 +28,10 @@ Sometimes it may be a tedious task manually creating work items in Azure DevOps.
   ![Figure: Find your project in the list](ExcelFindProject.jpeg)
 
   ![Figure: Choose 'Input list' to download the empty template](ExcelInputList.jpeg)
-  
 * Add the other useful columns e.g. Baseline Work, Remaining Work, Completed Work into Excel
   ![Figure: Click 'Choose columns'](ExcelChooseColumnsButton.jpeg)
 
   ![Figure: Select columns in the left list](ExcelChooseColumnsList.jpeg)
-  
 * Copy work items (including the Project Management tasks) from Release_XX to the new sheet
   ![Figure: Copy work items from Release_XX](ExcelWorkItems.jpeg)
-
 * Click "Publish" button to upload the work items to TFS
