@@ -19,7 +19,7 @@ Key points:
 * Security measures by OpenAI:
 
   * Encryption
-  * Access controls
+  * Role-Based Access Control
   * External security audits
   * Bug bounty program
   * Incident response plans
