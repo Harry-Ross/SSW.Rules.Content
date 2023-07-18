@@ -19,7 +19,7 @@ Shipping a large JavaScript bundle can be catastrophic for your web app - result
 
 <!--endintro-->
 
-Tools like [Webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org/) or [Vite](https://vitejs.dev/) can help with reducing the amount of JavaScript shipped to the end-user. However, even if we have used these tools it may still be necessary to minimise the number of NPM packages in the project.
+Despite the efforts made by tools like [Webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org/) or [Vite](https://vitejs.dev/) to optimize your JavaScript bundle, these may not be sufficient if your project has an excessive number of NPM packages. Each package introduces additional code to your bundle, and unnecessary or redundant packages can quickly inflate its size. Identifying and eliminating such packages can help keep your bundle lean and efficient. Here are some tools that can help with this process:
 
 ## depcheck
 
@@ -31,17 +31,23 @@ npx depcheck
 
 ![Figure: A list of the unused dependencies in a project](depcheck.png)
 
+**Note:** It is important to be mindful when using this tool of packages that are still in use in the project, either in the build steps or otherwise (e.g. `tailwindcss` in the example above is not explicitly imported in the project, but is still used behind the scenes).
+
 ## Bundlephobia
 
 Bundlephobia is a great tool for quickly seeing the bundle size of NPM packages. You can find the bundle size of any NPM package by going to the URL: bundlephobia.com/package/{{ PACKAGE_NAME_HERE }}. 
 
 You can also upload a package.json file to display a list of packages in your project, allowing you to easily see which NPM packages have the largest size in the project. You can find it at [bundlephobia.com/scan](https://bundlephobia.com/scan).
 
+
+
 ![Figure: The list of packages from the package.json file, sorted by size](bundlephobia_list.png)
+
+**Note:** It is important to understand that not all of the packages in your `package.json` file are shipped to the client, this is primarily a tool used to assess specific client-side packages that you suspect may have a large bundle size (for example, some packages may only be used by the server or within the build steps of the project i.e. `typescript` or `tailwindcss`). 
 
 ## Import Cost VSCode Extension
 
-The Import Cost extension for VSCode, developed by Wix shows the size of each NPM package you import, which can provide useful visual feedback on how large the packages you importing actually are. You can find the extension [here](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost). 
+The Import Cost extension for VSCode, developed by Wix shows the size of each NPM package you import, which can provide useful visual feedback on how large the packages you importing actually are. You search the extension on the Visual Studio Code Extension Marketplace at [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost). 
 
 ![Figure: The extension in action - shows you how large each package is, as you import it](import-cost.png)
 
