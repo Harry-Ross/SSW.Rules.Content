@@ -37,7 +37,7 @@ Due to the nature of how JavaScript runs scripts, this means that the code run b
 
 Partytown is framework-agnostic, and can be used by the vast majority of JavaScript frameworks including Angular, React, Vue, and even vanilla HTML. 
 
-NextJS now has built-in Partytown support in `next/script`, which can be applied by adding the `strategy="worker"` attribute to the `<Script>` tag. Documentation for this feature can be found in the NextJS [official documentation](https://nextjs.org/docs/pages/building-your-application/optimizing/scripts#strategy). 
+NextJS now has experimental built-in Partytown support in `next/script`, which can be applied by adding the `strategy="worker"` attribute to the `<Script>` tag. Documentation for this feature can be found in the NextJS [official documentation](https://nextjs.org/docs/pages/building-your-application/optimizing/scripts#strategy). 
 
 You can learn more about Partytown at [partytown.builder.io](https://partytown.builder.io/).
 
